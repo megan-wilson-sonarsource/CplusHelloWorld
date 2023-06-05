@@ -73,7 +73,9 @@ In command line and sonar-project.properties
 - sonar.cfamily.build-wrapper-output
 
 Download Build Wrapper for Windows from {SonarQube URL}/static/cpp/build-wrapper-win-x86.zip
+
 Download Build Wrapper for Windows from https://mlw-megan-us.ngrok.io/static/cpp/build-wrapper-win-x86.zip
+
 Extract and add to path 
 
 Run SonarScanner CLI on Windows with Build-Wrapper
