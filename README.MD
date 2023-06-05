@@ -58,6 +58,7 @@ sonar-scanner -Dsonar.projectKey=C-Hello-World -Dsonar.sources=src -Dsonar.host.
 ```
 
 Used this tutorial: https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line?view=msvc-170
+
 Used this tutorial: https://learn.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-170
 
 Run on Windows Developer Console:
@@ -68,8 +69,8 @@ Hello World
 ```
 
 In command line and sonar-project.properties
-sonar.cfamily.compile-commands
-sonar.cfamily.build-wrapper-output
+- sonar.cfamily.compile-commands
+- sonar.cfamily.build-wrapper-output
 
 Download Build Wrapper for Windows from {SonarQube URL}/static/cpp/build-wrapper-win-x86.zip
 Download Build Wrapper for Windows from https://mlw-megan-us.ngrok.io/static/cpp/build-wrapper-win-x86.zip
