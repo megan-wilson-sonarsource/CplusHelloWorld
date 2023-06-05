@@ -1,0 +1,5 @@
+.DS_Store
+.scannerwork/
+build/
+CMakeFiles/cmake.check_cache
+bw-output/
