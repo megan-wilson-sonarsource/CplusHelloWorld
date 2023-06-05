@@ -57,6 +57,9 @@ example:
 sonar-scanner -Dsonar.projectKey=C-Hello-World -Dsonar.sources=src -Dsonar.host.url=https://mlw-megan-us.ngrok.io/ -Dsonar.token=sqp_2e415a0aef627c28141ffa43d62679ee8a8b4f3a -Dsonar.cfamily.compile-commands=build/compile_commands.json
 ```
 
+Used this tutorial: https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line?view=msvc-170
+Used this tutorial: https://learn.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-170
+
 Run on Windows Developer Console:
 ```
 $ cl src\hello.cpp
@@ -84,3 +87,5 @@ $ C:\Users\mlw-windows-megan\Downloads\build-wrapper-win-x86\build-wrapper-win-x
 $ C:\Users\mlw-windows-megan\Downloads\sonar-scanner-cli-4.8.0.2856-windows\sonar-scanner-4.8.0.2856-windows\bin\sonar-scanner -Dsonar.projectKey=C-Hello-World -Dsonar.sources=src -Dsonar.host.url=https://mlw-megan-us.ngrok.io/ -Dsonar.token=sqp_2e415a0aef627c28141ffa43d62679ee8a8b4f3a -Dsonar.cfamily.build-wrapper-output=bw-output
 
 ```
+
+Note: We don't really care about the build tool. MSBuild is just an example we put in the documentation to illustrate one case on Windows OS. You can even use a shell / bat script; it will also work.
