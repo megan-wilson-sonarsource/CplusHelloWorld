@@ -4,3 +4,4 @@ build/
 CMakeFiles/cmake.check_cache
 bw-output/
 CmakeCache.txt
+.vscode/

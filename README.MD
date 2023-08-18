@@ -1,6 +1,6 @@
 Hello World in C++ tutorial: https://lappweb.in2p3.fr/~paubert/ASTERICS_HPC/2-2-100.html
 
-Run it with Clang: 
+Run it with Clang:
 ```
 $ cd src
 $ clang++ hello.cpp
@@ -39,7 +39,7 @@ Hello World%
 ```
 
 
-For More Examples: 
+For More Examples:
 https://github.com/sonarsource-cfamily-examples
 
 
@@ -50,11 +50,11 @@ To Run the executable of this Project:
 
 Run SonarScanner CLI on it on Mac with Compilation Database:
 ```
-sonar-scanner -Dsonar.projectKey=your_project_key -Dsonar.sources=src -Dsonar.host.url=https://your.sonarqube_url.com/ -Dsonar.token=sqp_xxxxxxxxxxxxxxxxxxxxxxxxxxxx -Dsonar.cfamily.compile-commands=build/compile_commands.json
+sonar-scanner -Dsonar.projectKey=your_project_key -Dsonar.sources=src -Dsonar.host.url=https://your.sonarqube_url.com/ -Dsonar.login=sqp_xxxxxxxxxxxxxxxxxxxxxxxxxxxx -Dsonar.cfamily.compile-commands=build/compile_commands.json
 ```
-example: 
+example:
 ```
-sonar-scanner -Dsonar.projectKey=C-Hello-World -Dsonar.sources=src -Dsonar.host.url=https://mlw-megan-us.ngrok.io/ -Dsonar.token=sqp_2e415a0aef627c28141ffa43d62679ee8a8b4f3a -Dsonar.cfamily.compile-commands=build/compile_commands.json
+sonar-scanner -Dsonar.projectKey=C-Hello-World -Dsonar.sources=src -Dsonar.host.url=https://mlw-megan-us.ngrok.io/ -Dsonar.login=sqp_2e415a0aef627c28141ffa43d62679ee8a8b4f3a -Dsonar.cfamily.compile-commands=build/compile_commands.json
 ```
 
 Used this tutorial: https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line?view=msvc-170
@@ -76,18 +76,18 @@ Download Build Wrapper for Windows from {SonarQube URL}/static/cpp/build-wrapper
 
 Download Build Wrapper for Windows from https://mlw-megan-us.ngrok.io/static/cpp/build-wrapper-win-x86.zip
 
-Extract and add to path 
+Extract and add to path
 
 Run SonarScanner CLI on Windows with Build-Wrapper
 ```
 $ build-wrapper-win-x86-64.exe --out-dir  bw-output cl src\hello.cpp
-$ sonar-scanner -Dsonar.projectKey=your_project_key -Dsonar.sources=src -Dsonar.host.url=https://your.sonarqube_url.com/ -Dsonar.token=sqp_xxxxxxxxxxxxxxxxxxxxxxxxxxxx -Dsonar.cfamily.build-wrapper-output=bw-output
+$ sonar-scanner -Dsonar.projectKey=your_project_key -Dsonar.sources=src -Dsonar.host.url=https://your.sonarqube_url.com/ -Dsonar.login=sqp_xxxxxxxxxxxxxxxxxxxxxxxxxxxx -Dsonar.cfamily.build-wrapper-output=bw-output
 
 ```
-example: 
+example:
 ```
 $ C:\Users\mlw-windows-megan\Downloads\build-wrapper-win-x86\build-wrapper-win-x86\build-wrapper-win-x86-64.exe --out-dir  bw-output cl src\hello.cpp
-$ C:\Users\mlw-windows-megan\Downloads\sonar-scanner-cli-4.8.0.2856-windows\sonar-scanner-4.8.0.2856-windows\bin\sonar-scanner -Dsonar.projectKey=C-Hello-World -Dsonar.sources=src -Dsonar.host.url=https://mlw-megan-us.ngrok.io/ -Dsonar.token=sqp_2e415a0aef627c28141ffa43d62679ee8a8b4f3a -Dsonar.cfamily.build-wrapper-output=bw-output
+$ C:\Users\mlw-windows-megan\Downloads\sonar-scanner-cli-4.8.0.2856-windows\sonar-scanner-4.8.0.2856-windows\bin\sonar-scanner -Dsonar.projectKey=C-Hello-World -Dsonar.sources=src -Dsonar.host.url=https://mlw-megan-us.ngrok.io/ -Dsonar.login=sqp_2e415a0aef627c28141ffa43d62679ee8a8b4f3a -Dsonar.cfamily.build-wrapper-output=bw-output
 
 ```
 
